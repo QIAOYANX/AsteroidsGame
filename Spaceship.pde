@@ -1,4 +1,4 @@
-Spaceshipclass Spaceship extends Floater
+class Spaceship extends Floater
 {
   public Spaceship(){
     corners =3 ;
