@@ -10,3 +10,4 @@ Spaceshipclass Spaceship extends Floater
     myYspeed = -5;
     myPointDirection = 0;
   }
+}
