@@ -1,5 +1,6 @@
 class Asteroid extends Floater
 {
+double rockSpeed;
   public Asteroid(){
     corners =5 ;
     xCorners = new int [] {(int)(Math.random()*15)+30, (int)(Math.random()*12)+24, (int)(Math.random()*14)-7,-20,-15,0};
@@ -11,9 +12,11 @@ class Asteroid extends Floater
     myPointDirection = 0;
     myColor = 255;
     myStroke = 250;
+    rockSpeed = Math.random()*2-1;
   }
   
   public void move (){
+  turn(rockSpeed); 
   super.move(); 
   }
   public double getX(){return myCenterX;}
