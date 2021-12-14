@@ -28,12 +28,12 @@ public void draw(){
     fleet.remove(k);
     }
   }
-  for(int t = 0; t<fleet.size()/2; t++){
-    ((Asteroid)(fleet.get(t))).turn(1);
-  }
-  for(int w = fleet.size()/2; w < fleet.size(); w++){
-    ((Asteroid)(fleet.get(w))).turn(-1);
-  }
+  //for(int t = 0; t<fleet.size()/2; t++){
+  //  ((Asteroid)(fleet.get(t))).turn(1);
+  //}
+  //for(int w = fleet.size()/2; w < fleet.size(); w++){
+  //  ((Asteroid)(fleet.get(w))).turn(-1);
+  //}
  // for(int k = 0; k<ship.length; k++){
     //ship[k].show();
   if(keyPressed){
