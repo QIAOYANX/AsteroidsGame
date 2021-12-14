@@ -9,7 +9,7 @@ class Asteroid extends Floater
     myXspeed = 2;
     myYspeed = 2;
     myPointDirection = 0;
-    myColor = 0;
+    myColor = 255;
     myStroke = 250;
   }
   
