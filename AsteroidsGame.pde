@@ -47,7 +47,7 @@ public void draw(){
       bob.accelerate(1);
     }
     if(key == 'h' || key == 'H'){
-     fleet.get(a).hyperspace();
+     bob.hyperspace();
     }
   }
   bob.move();
