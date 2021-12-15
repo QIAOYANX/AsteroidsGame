@@ -5,6 +5,7 @@ double X;
 double Y;
 ArrayList <Asteroid> fleet = new ArrayList <Asteroid>();
 ArrayList <Spaceship> group = new ArrayList <Spaceship>();
+int move = (int)(Math.random())-1;
 //double hyperspace = Math.random()*800;
 public void setup() {
   size(800,800);
@@ -36,16 +37,16 @@ public void draw(){
     
     }
   }
-  //for(int s = 0; s<group.size(); s++){
-    //group.get(s).show();
-    //group.get(s).move();
-  //}
-  for(int t = 0; t<fleet.size()/2; t++){
-    ((Floater)(fleet.get(t))).turn(1);
+  for(int s = 0; s<group.size(); s++){
+    group.get(s).show();
+    group.get(s).move();
   }
-  for(int w = fleet.size()/2; w < fleet.size(); w++){
-    ((Floater)(fleet.get(w))).turn(-1);
+  for(int t = 0; t<fleet.size(); t++){
+   ((Floater)(fleet.get(t))).turn(move);
   }
+ // for(int w = fleet.size()/2; w < fleet.size(); w++){
+   // ((Floater)(fleet.get(w))).turn(-1);
+ // }
  // for(int k = 0; k<ship.length; k++){
     //ship[k].show();
 for(int a = 0; a<3; a++){
@@ -74,4 +75,4 @@ for(int a = 0; a<3; a++){
   group.get(a).move();
   group.get(a).show();
  }
-}
+ }
